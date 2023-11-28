@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-11-28T21:00:42.226Z"
+    "x-generation-date": "2023-11-28T22:40:05.502Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -95,7 +95,8 @@
           "data": {
             "required": [
               "title",
-              "slug"
+              "slug",
+              "type"
             ],
             "type": "object",
             "properties": {
@@ -175,6 +176,13 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "post",
+                  "page"
+                ]
               }
             }
           }
@@ -230,7 +238,8 @@
         "type": "object",
         "required": [
           "title",
-          "slug"
+          "slug",
+          "type"
         ],
         "properties": {
           "title": {
@@ -1777,6 +1786,13 @@
                                         }
                                       }
                                     },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "post",
+                                        "page"
+                                      ]
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -1898,6 +1914,13 @@
                 }
               }
             }
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "post",
+              "page"
+            ]
           },
           "createdAt": {
             "type": "string",
@@ -3333,6 +3356,13 @@
                             }
                           }
                         }
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "post",
+                          "page"
+                        ]
                       },
                       "createdAt": {
                         "type": "string",
